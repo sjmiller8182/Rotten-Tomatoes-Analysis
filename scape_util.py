@@ -232,6 +232,7 @@ def scrape_movie_names(year):
         matches[m] = matches[m].split('title=')[1].replace('"','')
         matches[m] = re.sub(r'\s\((\d+\s)?([\w\s]+)?film\)','',matches[m])
         matches[m] = re.sub(r'Category\:\d+','',matches[m])
+    matches.remove('')
 
     if len(matches) == 0:
         print('-> Scraping failed.')
