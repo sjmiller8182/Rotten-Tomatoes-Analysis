@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/movie_info.csv
+/names.txt
+/reviews.csv
